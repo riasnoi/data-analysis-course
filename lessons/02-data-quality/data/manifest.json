@@ -1,0 +1,11 @@
+{
+  "origin": "CFPB/FFIEC HMDA 2023 District of Columbia, decisions.csv; deterministic training copy",
+  "files": {
+    "decisions.csv": {
+      "sha256": "496a279949f3b44f4ba28a38a7e63fecf9b9a75576da010bd151b2d430148531"
+    },
+    "training_export.csv": {
+      "sha256": "2e4a6f52140d4687e20d1228ee47cb83d882f8deb68eb7a290b19d804e9ca5f0"
+    }
+  }
+}

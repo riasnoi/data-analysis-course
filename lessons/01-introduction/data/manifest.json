@@ -1,0 +1,89 @@
+{
+  "acquisition": {
+    "hmda_2023_dc_raw.csv": {
+      "url": "https://files.ffiec.cfpb.gov/data-browser/datasets/2023/filtered-queries/one-year/bed07bd454bc0dde2005efef1d890750.csv",
+      "params": {
+        "years": "2023",
+        "counties": "11001",
+        "loan_purposes": "1",
+        "actions_taken": "1,2,3,4,5"
+      },
+      "status": 200,
+      "content_type": "text/csv; charset=UTF-8",
+      "downloaded_at_utc": "2026-10-10T15:44:23.031475+00:00",
+      "bytes": 3303620,
+      "sha256": "0cf6b6b86ab7d3f993990679d4e315e4f8e2635e1930ef2f45f3924ee2e197c2"
+    },
+    "aggregations_2023_dc.json": {
+      "url": "https://ffiec.cfpb.gov/v2/data-browser-api/view/aggregations?years=2023&counties=11001&loan_purposes=1&actions_taken=1%2C2%2C3%2C4%2C5",
+      "params": {
+        "years": "2023",
+        "counties": "11001",
+        "loan_purposes": "1",
+        "actions_taken": "1,2,3,4,5"
+      },
+      "status": 200,
+      "content_type": "application/json",
+      "downloaded_at_utc": "2026-10-10T15:44:23.469860+00:00",
+      "bytes": 470,
+      "sha256": "a643ba631c44476e3b42592e51f3f84b798f2fc5c9fc2118c0987bbc985116c3"
+    },
+    "filers_2023_dc.json": {
+      "url": "https://ffiec.cfpb.gov/v2/data-browser-api/view/filers?years=2023&counties=11001",
+      "params": {
+        "years": "2023",
+        "counties": "11001"
+      },
+      "status": 200,
+      "content_type": "application/json",
+      "downloaded_at_utc": "2026-10-10T15:44:24.111711+00:00",
+      "bytes": 42859,
+      "sha256": "c239cce0af6b3567b5bb09154e5528b56ad251f2d9e53f06a5f8e0f2827eb3b4"
+    }
+  },
+  "files": {
+    "aggregations_2023_dc.json": {
+      "bytes": 470,
+      "sha256": "a643ba631c44476e3b42592e51f3f84b798f2fc5c9fc2118c0987bbc985116c3"
+    },
+    "decisions.csv": {
+      "bytes": 365824,
+      "sha256": "496a279949f3b44f4ba28a38a7e63fecf9b9a75576da010bd151b2d430148531"
+    },
+    "filers_2023_dc.json": {
+      "bytes": 42859,
+      "sha256": "c239cce0af6b3567b5bb09154e5528b56ad251f2d9e53f06a5f8e0f2827eb3b4"
+    },
+    "hmda_2023_dc_raw.csv": {
+      "bytes": 3303620,
+      "sha256": "0cf6b6b86ab7d3f993990679d4e315e4f8e2635e1930ef2f45f3924ee2e197c2"
+    },
+    "reading_example.csv": {
+      "bytes": 385,
+      "sha256": "0be320e9f9968df83667d6c3be0fc6688ff7b73dd3c42e358bc59b297fed2840"
+    }
+  },
+  "metrics": {
+    "raw_rows": 8575,
+    "decision_rows": 6830,
+    "example_rows": 6,
+    "approved": 6139,
+    "originated": 5956,
+    "denied": 691,
+    "approval_rate": 0.8988286969253294,
+    "origination_rate": 0.8720351390922401,
+    "outcome_counts": {
+      "2": 183,
+      "1": 5956,
+      "3": 691,
+      "4": 1585,
+      "5": 160
+    },
+    "institutions": 470,
+    "unmatched_institutions": 0,
+    "income_missing_decisions": 342
+  },
+  "example_selection": "первые две записи каждого action_taken=1,2,3; не случайная выборка",
+  "decision_selection": "action_taken in [1,2,3]; остальные строки сохранены в raw",
+  "seed": "не используется: подготовка и выбор примеров детерминированы"
+}
