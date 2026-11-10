@@ -1,0 +1,12 @@
+{
+  "input": 6832,
+  "replays": 2,
+  "clean": 6828,
+  "quarantine": 2,
+  "parse_errors": {
+    "source_row": 0,
+    "loan_amount": 1,
+    "income": 1,
+    "action_taken": 0
+  }
+}

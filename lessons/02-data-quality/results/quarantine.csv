@@ -1,0 +1,3 @@
+source_row,activity_year,lei,county_code,action_taken,loan_amount,income,reason
+2,2023,549300VZVN841I2ILS84,11001,1,oops,72.0,invalid_loan_amount;
+3,2023,549300P1347BFCBHJV60,11001,88,585000.0,174.0,invalid_action_taken;
