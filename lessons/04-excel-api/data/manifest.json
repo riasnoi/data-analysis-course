@@ -1,0 +1,66 @@
+{
+  "source": "GLEIF API (реальные ответы); CFPB HMDA (реальные данные, другой формат)",
+  "first_url": "https://api.gleif.org/api/v1/lei-records?filter%5Blei%5D=549300VZVN841I2ILS84%2C549300P1347BFCBHJV60%2C549300RPOGWJRH63HS39&page%5Bsize%5D=2",
+  "selected_lei": [
+    "549300VZVN841I2ILS84",
+    "549300P1347BFCBHJV60",
+    "549300RPOGWJRH63HS39"
+  ],
+  "pages": [
+    {
+      "file": "gleif_page_01.json",
+      "request_url": "https://api.gleif.org/api/v1/lei-records?filter%5Blei%5D=549300VZVN841I2ILS84%2C549300P1347BFCBHJV60%2C549300RPOGWJRH63HS39&page%5Bsize%5D=2",
+      "response_url": "https://api.gleif.org/api/v1/lei-records?filter%5Blei%5D=549300VZVN841I2ILS84%2C549300P1347BFCBHJV60%2C549300RPOGWJRH63HS39&page%5Bsize%5D=2",
+      "downloaded_at_utc": "2026-10-10T20:45:10.736893+00:00",
+      "status_code": 200,
+      "content_type": "application/vnd.api+json",
+      "bytes": 5725,
+      "sha256": "cd9a82768bdbf2db392c25eac7bc824e43be96de4b769241aa98e1a67c320015",
+      "records": 2,
+      "next": "https://api.gleif.org/api/v1/lei-records?filter%5Blei%5D=549300VZVN841I2ILS84%2C549300P1347BFCBHJV60%2C549300RPOGWJRH63HS39&page%5Bnumber%5D=2&page%5Bsize%5D=2",
+      "golden_copy_publish_date": "2026-10-10T08:00:00Z"
+    },
+    {
+      "file": "gleif_page_02.json",
+      "request_url": "https://api.gleif.org/api/v1/lei-records?filter%5Blei%5D=549300VZVN841I2ILS84%2C549300P1347BFCBHJV60%2C549300RPOGWJRH63HS39&page%5Bnumber%5D=2&page%5Bsize%5D=2",
+      "response_url": "https://api.gleif.org/api/v1/lei-records?filter%5Blei%5D=549300VZVN841I2ILS84%2C549300P1347BFCBHJV60%2C549300RPOGWJRH63HS39&page%5Bnumber%5D=2&page%5Bsize%5D=2",
+      "downloaded_at_utc": "2026-10-10T20:45:11.174895+00:00",
+      "status_code": 200,
+      "content_type": "application/vnd.api+json",
+      "bytes": 3429,
+      "sha256": "1c37b07f7bca3d12c929b32ca07ffece53bb1b2d463b7660ef9656a51b99b603",
+      "records": 1,
+      "next": null,
+      "golden_copy_publish_date": "2026-10-10T08:00:00Z"
+    }
+  ],
+  "files": {
+    "gleif_page_01.json": {
+      "sha256": "cd9a82768bdbf2db392c25eac7bc824e43be96de4b769241aa98e1a67c320015",
+      "bytes": 5725
+    },
+    "gleif_page_02.json": {
+      "sha256": "1c37b07f7bca3d12c929b32ca07ffece53bb1b2d463b7660ef9656a51b99b603",
+      "bytes": 3429
+    },
+    "gleif_lookup.csv": {
+      "sha256": "649d6047d746e70ba8578660099aac6fd347d9996e284a396f034b7e21d5c96a",
+      "bytes": 397
+    },
+    "hmda_exchange.xlsx": {
+      "sha256": "47b06755bffccf72e3e39f78a6e1df99c3ecd1dd762e6d61dbd8ff8dc1eee019",
+      "bytes": 25237
+    }
+  },
+  "counts": {
+    "pages": 2,
+    "gleif_records": 3,
+    "hmda_organizations": 470,
+    "excel_reading_rows": 10,
+    "covered_decisions": 76
+  },
+  "time_limitation": "GLEIF — текущий snapshot, не состояние на дату HMDA 2023; не ML-признак прошлого без проверки доступности",
+  "license_url": "https://www.gleif.org/en/about/open-data",
+  "license": "GLEIF LEI data: CC0; HMDA: см. общий data/card.md",
+  "seed": "нет случайной генерации; первые 3 уникальных LEI детерминированно"
+}
