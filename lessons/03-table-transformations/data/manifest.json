@@ -1,0 +1,22 @@
+{
+  "source_manifest": "../../01-introduction/data/manifest.json",
+  "files": {
+    "outcome_wide.csv": {
+      "sha256": "2f2273a4bf952853a5641e6212463106b37de5d05629adca580aa277b02723ba",
+      "bytes": 10225
+    },
+    "outcome_counts.csv": {
+      "sha256": "639009fe51a525390c966e9914c1acd37ef6006df6f40de633f5b80024447f4d",
+      "bytes": 15156
+    },
+    "organizations.csv": {
+      "sha256": "7620b51178209a34f96588d9225e1860ba9cebf38ee6da94eea0f7ea96b05aaa",
+      "bytes": 26341
+    },
+    "decisions.csv": {
+      "sha256": "496a279949f3b44f4ba28a38a7e63fecf9b9a75576da010bd151b2d430148531",
+      "bytes": 365824
+    }
+  },
+  "synthetic_records": false
+}
